@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--
+    Lessons learned about HTML, CSS, JavaScript:
+        1. Start with basic content in HTML. Then add CSS. Then add JavaScript functionality.
+-->
 <html>
     <head>
         <link rel="stylesheet" href="css/algorithms.css">
@@ -8,11 +12,22 @@
     </head>
     <body>
         <h1 id="main_header">Sorting</h1>
+        
         <div id="motivation">
         <h3 class="subheader">Motivation</h3>
-        <p>Why would you care about sorting? To start, there may be easily accessible examples, such as in a phonebook. Sorting also makes certain computational tasks easier, such as finding the median and finding an element in a list.</p>
+        <p>Why would you care about sorting? To start, there may be easily accessible examples, such as in a phonebook. Sorting also makes certain computational tasks easier, such as finding the median and finding an element in a list. There are also applications in fields of computer science, such as data compression and computer graphics.</p>
         </div>
+        <div id="insertion">
         <h3 class="subheader">Insertion Sort</h3>
+        <p>Let's begin with our first attempt at sorting.</p>
+        <p>Let's go through out array and put each element in an already sorted array.</p>
+        <p>Here's the psuedocode</p>
+        <p>For i=1...n</p>
+        <p>insert A[i] into sorted array A[0:i-1] by pairwise swaps</p>
+        </div>
+        <h3 class="subheader">Insertion Sort Complexity Analysis</h3>
+        <p>We can analyze the time complexity of insertion sort by determining how long the inner loop takes and how many times our inner loop executes.</p>
+        <p>The inner loop has complexity O(n), because we may have to swap the element all the way to the front of the subarray, which means O(n) comparisons and O(n) swaps. The inner loop executes O(n) times, which means insertion sort is O(n^2).</p>
         <h3 class="subheader">Merge Sort</h3>
     </body>
 </html>

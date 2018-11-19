@@ -12,6 +12,10 @@
     width: 500px;
 }
 
+#insertion {
+    margin: 0 auto;
+    width: 500px;
+}
 .subheader {
     text-align: center;
     font-family: Roboto;
